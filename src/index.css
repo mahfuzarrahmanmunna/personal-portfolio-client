@@ -9,9 +9,11 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: blue;
+  --color-primary: ;
   --color-secondary: teal;
 }
+@plugin 'tailwind-scrollbar';
+
 
 /* Fonts here */
 @theme {
@@ -19,6 +21,11 @@
   --font-inter: "Inter", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   @apply bg-zinc-900 text-zinc-50
 }
+
