@@ -11,7 +11,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-24 py-20 bg-base-100 dark:bg-gray-950 relative overflow-hidden">
+        <section id='home' className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-24 py-20 bg-base-100 dark:bg-gray-950 relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-primary opacity-20 rounded-full blur-[120px] z-0"></div>
             <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-secondary opacity-20 rounded-full blur-[120px] z-0"></div>

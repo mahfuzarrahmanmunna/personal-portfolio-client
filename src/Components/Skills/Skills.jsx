@@ -29,7 +29,7 @@ const Skills = () => {
                 </p>
 
                 {/* Marquee Columns */}
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-12">
                     <Marquee gradient={false} speed={50} pauseOnHover={true} className="gap-4">
                         {firstHalf.map((tool, index) => (
                             <div
