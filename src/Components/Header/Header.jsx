@@ -41,7 +41,7 @@ const Header = () => {
                     <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 </div>
 
-                <a href="#contact" className="text-white hidden md:block">
+                <a href="#contact" id='contact' className="text-white hidden md:block">
                     Contact Me
                 </a>
             </div>
