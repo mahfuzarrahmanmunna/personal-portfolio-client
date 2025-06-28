@@ -34,7 +34,7 @@ const Header = () => {
                         className={`h-10 w-10 grid place-items-center md:hidden rounded-xl backdrop-blur-2xl transition-[transform, shadow] active:scale-95 ${menuOpen ? 'bg-primary text-white' : 'bg-zinc-50/10 ring-1 ring-zinc-50/[0.02] hover:bg-zinc-50/15'}`}
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
-                        <span className="material-symbols-rounded">
+                        <span className='material-symbols-rounded'>
                             <BiMenu />
                         </span>
                     </button>

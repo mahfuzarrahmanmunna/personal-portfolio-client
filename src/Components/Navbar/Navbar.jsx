@@ -2,36 +2,46 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
     const [navItems, setNavItems] = useState([
-        { label: "Home", link: "/" },
+        { label: "Home", link: "#home" },
         { label: "About", link: "#about" },
         { label: "Skill", link: "#skill" },
         { label: "Project", link: "#project" },
         { label: "Contact", link: "#contact" },
     ]);
-    const [active, setActive] = useState(window.location.hash || '/'); // Set active based on the URL hash initially
+    const [active, setActive] = useState(window.location.hash || '#home'); // Set active based on the URL hash initially
 
     const handleScroll = (id) => {
         setActive(id);
         const section = document.querySelector(id);
-        if (section) section.scrollIntoView({ behavior: 'smooth' });
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
         if (setMenuOpen) setMenuOpen(false); // Close mobile menu when a link is clicked
     };
 
     useEffect(() => {
-        // Update active state when scrolling
-        const onScroll = () => {
-            const sections = navItems.map(item => document.querySelector(item.link));
-            sections.forEach((section, index) => {
-                if (section && window.scrollY >= section.offsetTop - 50) {
-                    setActive(navItems[index].link);
+        // Create an intersection observer to track section visibility
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActive(`#${entry.target.id}`); // Update active link based on section
                 }
             });
-        };
+        }, {
+            threshold: 0.5 // Trigger when 50% of the section is visible
+        });
 
-        window.addEventListener('scroll', onScroll);
+        // Observe each section
+        navItems.forEach(item => {
+            const section = document.querySelector(item.link);
+            if (section) observer.observe(section);
+        });
 
         return () => {
-            window.removeEventListener('scroll', onScroll);
+            navItems.forEach(item => {
+                const section = document.querySelector(item.link);
+                if (section) observer.unobserve(section);
+            });
         };
     }, [navItems]);
 
@@ -45,8 +55,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                         e.preventDefault();
                         handleScroll(link); // handle scroll and activate the link
                     }}
-                    className={`text-white transition-all duration-300 hover:text-primary relative p-2 ${active === link ? 'font-bold text-primary bg-zinc-700/50 backdrop-blur-md rounded-md' : ''
-                        }`}
+                    className={`text-white transition-all duration-300 hover:text-primary relative p-2 ${active === link ? 'font-bold text-primary bg-zinc-700/50 backdrop-blur-md rounded-md' : ''}`}
                 >
                     {label}
                 </a>
