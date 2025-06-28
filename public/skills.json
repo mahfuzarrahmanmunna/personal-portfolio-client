@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Figma",
+        "desc": "Design tool",
+        "icon": "figma",
+        "color": "pink-500"
+    },
+    {
+        "name": "CSS",
+        "desc": "User Interface",
+        "icon": "css3",
+        "color": "blue-500"
+    },
+    {
+        "name": "JavaScript",
+        "desc": "Interaction",
+        "icon": "javascript",
+        "color": "yellow-400"
+    },
+    {
+        "name": "NodeJS",
+        "desc": "Web Server",
+        "icon": "nodedotjs",
+        "color": "green-500"
+    },
+    {
+        "name": "ExpressJS",
+        "desc": "Node Framework",
+        "icon": "express",
+        "color": "gray-200"
+    },
+    {
+        "name": "MongoDB",
+        "desc": "Database",
+        "icon": "mongodb",
+        "color": "green-600"
+    },
+    {
+        "name": "React",
+        "desc": "Framework",
+        "icon": "react",
+        "color": "cyan-400"
+    },
+    {
+        "name": "TailwindCSS",
+        "desc": "User Interface",
+        "icon": "tailwindcss",
+        "color": "sky-400"
+    }
+]
