@@ -22,7 +22,7 @@ const Footer = () => {
                         <FaGithub size={20} />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/md-mahfuzar-rahman-munna-41a342351/" // Replace with your real LinkedIn link
+                        href="https://www.linkedin.com/in/md-mahfuzar-rahman-munna-41a342351/"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:text-primary transition"

@@ -30,7 +30,7 @@ const projects = [
     {
         id: 'portfolio',
         name: 'Personal Portfolio Website',
-        image: 'https://i.ibb.co/5FhVf1Y/portfolio-cover.png',
+        image: 'https://i.ibb.co/kgLVZrKH/image.png',
         tech: ['React', 'Tailwind', 'Framer Motion', 'EmailJS'],
         description: `This is my personal portfolio site, built to showcase my best work and professional growth. It features animated hero sections, dark/light themes, section navigation, and a contact form powered by EmailJS. Fully responsive and optimized for performance. Built entirely with reusable components.`,
         live: 'https://munna-portfolio.netlify.app',

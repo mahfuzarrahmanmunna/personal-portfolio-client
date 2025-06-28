@@ -1,22 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BsChevronDoubleDown } from 'react-icons/bs';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Hero = () => {
     const scrollToNext = () => {
-        const nextSection = document.querySelector('#about'); // change this ID to your next section ID
+        const nextSection = document.querySelector('#about');
         if (nextSection) {
             nextSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
     return (
-        <section id='home' className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-24 py-20 bg-base-100 dark:bg-gray-950 relative overflow-hidden">
-            {/* Background Glow */}
+        <section
+            id="home"
+            className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-24 py-20 bg-base-100 dark:bg-gray-950 relative overflow-hidden"
+        >
+            {/* Glows */}
             <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-primary opacity-20 rounded-full blur-[120px] z-0"></div>
             <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-secondary opacity-20 rounded-full blur-[120px] z-0"></div>
 
-            {/* Left Side */}
+            {/* Left */}
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -27,21 +31,52 @@ const Hero = () => {
                     Hi, I'm <span className="text-primary">Mahfuzar Rahman Munna</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0">
-                    Full Stack Developer crafting immersive digital experiences with the power of React, Node, and MongoDB.
+                    Passionate Full Stack Developer with experience in building responsive, real-world applications using React, Node, Express js and MongoDB. I’m on a journey from a diploma student to becoming a global software engineer. I aim to work in any country where the tech industry is thriving and I can grow by solving real problems with clean code and great design.
                 </p>
 
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
-                   
-                    <a href="#project" className="btn btn-outline btn-accent shadow-md hover:scale-105 transition-transform duration-300">
+                    <a
+                        href="#project"
+                        className="btn btn-outline btn-accent shadow-md hover:scale-105 transition-transform duration-300"
+                    >
                         View Projects
                     </a>
-                    <a href="#contact" className="btn btn-neutral shadow-md hover:scale-105 transition-transform duration-300">
+                    <a
+                        href="#contact"
+                        className="btn btn-neutral shadow-md hover:scale-105 transition-transform duration-300"
+                    >
                         Contact Me
+                    </a>
+                </div>
+
+                {/* Social Icons */}
+                <div className="flex justify-center lg:justify-start gap-5 pt-4 text-xl">
+                    <a
+                        href="https://github.com/mahfuzarrahmanmunna"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-gray-500 hover:text-primary transition"
+                    >
+                        <FaGithub />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/md-mahfuzar-rahman-munna-41a342351/"s
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-gray-500 hover:text-primary transition"
+                    >
+                        <FaLinkedin />
+                    </a>
+                    <a
+                        href="mailto:mdmahfuzarrahmanmunna44@gmail.com"
+                        className="text-gray-500 hover:text-primary transition"
+                    >
+                        <FaEnvelope />
                     </a>
                 </div>
             </motion.div>
 
-            {/* Right Side (Image) */}
+            {/* Right (Image) */}
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -63,9 +98,12 @@ const Hero = () => {
                 </div>
             </motion.div>
 
-            {/* Scroll Down Icon */}
+            {/* Scroll Icon */}
             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20">
-                <button onClick={scrollToNext} className="text-primary cursor-pointer animate-bounce hover:text-accent transition-all">
+                <button
+                    onClick={scrollToNext}
+                    className="text-primary cursor-pointer animate-bounce hover:text-accent transition-all"
+                >
                     <BsChevronDoubleDown size={30} />
                 </button>
             </div>
