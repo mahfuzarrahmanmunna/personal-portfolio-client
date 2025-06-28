@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header';
 import Hero from '../../Components/Hero/Hero';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import AboutMe from '../../Components/AboutMe/AboutMe';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,7 +37,9 @@ const HomeLayouts = () => {
             <div className="gsap-section">
                 <Hero />
             </div>
-            {/* Add more sections wrapped in .gsap-section class to auto-animate */}
+            <div className='gsap-section'>
+                <AboutMe />
+            </div>
         </div>
     );
 };
