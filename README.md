@@ -6,7 +6,7 @@ This is a personal portfolio website built using **React**, **Tailwind CSS**, **
 
 ---
 ## 🚀 Live Site
-👉 [Live Portfolio](https://munna-portfolio.netlify.app)
+👉 [Live Portfolio](https://mahfuzar-rahman-munna.netlify.app/)
 
 ---
 
