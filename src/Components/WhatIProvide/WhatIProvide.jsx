@@ -48,7 +48,12 @@ const WhatIProvide = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            className="bg-base-200 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl border border-white/5 text-left"
+                            className="bg-base-200 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl border border-white/5 text-left cursor-pointer"
+                            whileHover={{
+                                scale: 1.05, // Scale effect when hovering
+                                boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.2)', // Slight shadow when hovered
+                            }}
+                            whileTap={{ scale: 0.95 }} // Add a tap effect
                         >
                             <div className="mb-4">{service.icon}</div>
                             <h4 className="text-lg font-semibold mb-2 text-white">{service.title}</h4>
