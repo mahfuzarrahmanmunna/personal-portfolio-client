@@ -15,8 +15,8 @@
         "className": "nav-link"
     },
     {
-        "label": "Reviews",
-        "link": "#reviews",
+        "label": "Project",
+        "link": "#project",
         "className": "nav-link"
     },
     {

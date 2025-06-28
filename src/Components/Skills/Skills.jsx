@@ -18,7 +18,7 @@ const Skills = () => {
     const secondHalf = skills.slice(4);
 
     return (
-        <section id="skills" className="bg-base-100 dark:bg-gray-900 py-20 px-6 lg:px-20">
+        <section id="skill" className="bg-base-100 dark:bg-gray-900 py-20 px-6 lg:px-20">
             <div className="max-w-6xl mx-auto">
                 {/* Section Title */}
                 <h2 className="text-4xl font-bold text-center text-primary mb-6">
@@ -30,7 +30,7 @@ const Skills = () => {
 
                 {/* Marquee Columns */}
                 <div className="flex flex-col gap-6">
-                    <Marquee gradient={false} speed={50} className="gap-4">
+                    <Marquee gradient={false} speed={50} pauseOnHover={true} className="gap-4">
                         {firstHalf.map((tool, index) => (
                             <div
                                 key={index}
@@ -47,7 +47,7 @@ const Skills = () => {
                         ))}
                     </Marquee>
 
-                    <Marquee gradient={false} speed={40} direction="right" className="gap-4">
+                    <Marquee gradient={false} speed={40} direction="right" pauseOnHover={true} className="gap-4">
                         {secondHalf.map((tool, index) => (
                             <div
                                 key={index}

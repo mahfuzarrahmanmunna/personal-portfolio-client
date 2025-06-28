@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import AboutMe from '../../Components/AboutMe/AboutMe';
 import Skills from '../../Components/Skills/Skills';
+import Projects from '../../Components/Project/Project';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,6 +44,9 @@ const HomeLayouts = () => {
             </div>
             <div className="gsap-section">
                 <Skills />
+            </div>
+            <div className="gsap-section">
+                <Projects />
             </div>
         </div>
     );
