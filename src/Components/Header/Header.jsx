@@ -39,6 +39,7 @@ const Header = () => {
                         </span>
                     </button>
 
+                    {/* Mobile Navbar */}
                     <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 </div>
 

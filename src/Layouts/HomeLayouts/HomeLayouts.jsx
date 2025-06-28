@@ -8,6 +8,7 @@ import Projects from '../../Components/Project/Project';
 import Contact from '../../Components/Contact/Contact';
 import WhatIProvide from '../../Components/WhatIProvide/WhatIProvide';
 import Footer from '../../Components/Footer/Footer';
+import Education from '../../Components/Education/Education';
 
 const fadeInVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -80,6 +81,18 @@ const HomeLayouts = () => {
                 custom={0.4}
             >
                 <Projects />
+            </motion.section>
+
+            {/* Education */}
+            <motion.section
+                className="section-padding"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={fadeInVariants}
+                custom={0.4}
+            >
+                <Education />
             </motion.section>
 
             {/* Contact */}
