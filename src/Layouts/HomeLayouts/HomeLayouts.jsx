@@ -95,6 +95,18 @@ const HomeLayouts = () => {
                 <Education />
             </motion.section>
 
+            {/* What I Provide */}
+            <motion.section
+                className="section-padding"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={fadeInVariants}
+                custom={0.6}
+            >
+                <WhatIProvide />
+            </motion.section>
+
             {/* Contact */}
             <motion.section
                 className="section-padding"
@@ -113,17 +125,6 @@ const HomeLayouts = () => {
                 <Contact />
             </motion.section>
 
-            {/* What I Provide */}
-            <motion.section
-                className="section-padding"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false }}
-                variants={fadeInVariants}
-                custom={0.6}
-            >
-                <WhatIProvide />
-            </motion.section>
 
             {/* Footer */}
             <motion.footer
