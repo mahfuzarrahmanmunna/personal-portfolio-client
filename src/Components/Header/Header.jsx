@@ -125,7 +125,7 @@ const Header = () => {
                 </div>
 
                 {/* Logo */}
-                <div className="flex-1 flex justify-center md:justify-start">
+                <div className="flex-1 md:flex ms-1 md:ms-0 justify-center md:justify-start">
                     <a href="/" className="logo">
                         <img
                             src="https://i.ibb.co/MxZyvgSH/munna-mahfuzar-rahman-munna-personal-portfolio-single-logo.png"

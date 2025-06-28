@@ -33,7 +33,7 @@ const projects = [
         image: 'https://i.ibb.co/kgLVZrKH/image.png',
         tech: ['React', 'Tailwind', 'Framer Motion', 'EmailJS'],
         description: `This is my personal portfolio site, built to showcase my best work and professional growth. It features animated hero sections, dark/light themes, section navigation, and a contact form powered by EmailJS. Fully responsive and optimized for performance. Built entirely with reusable components.`,
-        live: 'https://munna-portfolio.netlify.app',
+        live: 'https://mahfuzar-rahman-munna.netlify.app/',
         githubClient: 'https://github.com/mahfuzarrahmanmunna/personal-portfolio-client',
         githubServer: '',
         challenges: 'Ensuring accessibility and responsive animation transitions.',
