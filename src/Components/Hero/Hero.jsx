@@ -31,10 +31,8 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
-                    <a href="/resume.pdf" download className="btn btn-primary shadow-md hover:scale-105 transition-transform duration-300">
-                        Download Resume
-                    </a>
-                    <a href="#projects" className="btn btn-outline btn-accent shadow-md hover:scale-105 transition-transform duration-300">
+                   
+                    <a href="#project" className="btn btn-outline btn-accent shadow-md hover:scale-105 transition-transform duration-300">
                         View Projects
                     </a>
                     <a href="#contact" className="btn btn-neutral shadow-md hover:scale-105 transition-transform duration-300">

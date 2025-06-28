@@ -8,6 +8,7 @@ import AboutMe from '../../Components/AboutMe/AboutMe';
 import Skills from '../../Components/Skills/Skills';
 import Projects from '../../Components/Project/Project';
 import Contact from '../../Components/Contact/Contact';
+import WhatIProvide from '../../Components/WhatIProvide/WhatIProvide';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,6 +52,9 @@ const HomeLayouts = () => {
             </div>
             <div className="gsap-section">
                 <Contact />
+            </div>
+            <div className="gsap-section">
+                <WhatIProvide />
             </div>
         </div>
     );
