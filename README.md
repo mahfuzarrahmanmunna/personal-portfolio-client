@@ -4,6 +4,12 @@
 
 This is a personal portfolio website built using **React**, **Tailwind CSS**, **Framer Motion**, **GSAP**, and **EmailJS**. It showcases my skills, projects, and contact information. The portfolio is designed to be highly responsive with smooth animations, interactive sections, and dynamic content rendering.
 
+---
+## 🚀 Live Site
+👉 [Live Portfolio](https://munna-portfolio.netlify.app)
+
+---
+
 ## Features
 
 - **Smooth Scroll**: Scroll smoothly between sections of the website with highlights for the active section.
@@ -21,6 +27,24 @@ This is a personal portfolio website built using **React**, **Tailwind CSS**, **
 - **Framer Motion**: A React library for animations.
 - **EmailJS**: A service to send emails without a backend.
 
+---
+## 📁 Folder Structure
+```
+/src
+├── Components
+│   ├── AboutMe
+│   ├── Contact
+│   ├── Footer
+│   ├── Header
+│   ├── Hero
+│   ├── Project
+│   ├── Skills
+│   ├── WhatIProvide
+├── Layouts
+│   └── HomeLayouts.jsx
+└── App.jsx
+```
+
 ## Installation
 
 ### Prerequisites
@@ -35,5 +59,22 @@ Before you start, ensure you have the following installed:
 
 1. **Clone the repository**
 
+## 📦 Getting Started
+
+### 1. Clone this repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/mahfuzarrahmanmunna/personal-portfolio-client.git
+cd personal-portfolio-client
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start development server
+```bash
+npm run dev
+```
+
+Now your app should be running at `http://localhost:5173`
