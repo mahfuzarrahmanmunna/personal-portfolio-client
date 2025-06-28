@@ -10,7 +10,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             .then((data) => setNavItems(data))
             .catch((err) => console.error("Failed to load nav items:", err));
     }, []);
-
+    console.log(navItems);
     const handleScroll = (id) => {
         setActive(id);
         const section = document.querySelector(id);
